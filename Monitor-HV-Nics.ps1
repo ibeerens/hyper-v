@@ -12,3 +12,4 @@ while ($true) {
         }
     } | Sort-Object 'Send MB/s', 'Recv MB/s' -Descending | Format-Table -AutoSize
     $now | ForEach-Object { $prev[$_.Name] = $_ }
+}
