@@ -41,7 +41,7 @@ Use either `-ClusterName` or `-ComputerName`. The time range defaults to the las
 
 ### `Monitor-HV-Nics.ps1`
 
-Continuously displays each network adapter's approximate send and receive traffic in MB/s. It samples adapter byte counters every second, refreshes the console, and sorts the table by traffic. Press **Ctrl+C** to stop.
+Continuously displays each network adapter's approximate send and receive traffic in MB/s. At startup, it asks how many seconds to wait between samples; the displayed rates are averaged over that interval. The console refreshes and sorts the table by traffic. Press **Ctrl+C** to stop.
 
 Run it in a PowerShell session on the Hyper-V host whose adapters you want to monitor:
 
